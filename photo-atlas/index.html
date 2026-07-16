@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Atlas — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a; background: #fff;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-top: 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: 0.35rem 0; }
+  a { color: #1A237E; }
+  code { background: #f0f0f3; padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    h2 { border-color: #333; }
+    .updated { color: #9a9a9a; }
+    a { color: #9fa8da; }
+    code { background: #242424; }
+  }
+</style>
+</head>
+<body>
+  <h1>Photo Atlas — Privacy Policy</h1>
+  <p class="updated">Last updated: 16 July 2026</p>
+
+  <p>Photo Atlas helps you see where your photos were taken on a map. It is designed to be
+  <strong>local-first</strong>: your photos and the information derived from them stay on your
+  device, and the app has no servers, accounts, or analytics of its own.</p>
+
+  <h2>What the app accesses</h2>
+  <ul>
+    <li><strong>Photos &amp; videos on your device (optional).</strong> If you enable the device
+      photo source and grant permission, the app reads your photos/videos and their embedded
+      metadata (capture date and GPS, if present) to place them on the map. This happens on your
+      device.</li>
+    <li><strong>Your Dropbox files (optional, read-only).</strong> If you connect Dropbox, the app
+      reads photo/video files and their metadata from the Dropbox folders you choose, to build
+      thumbnails and determine where each photo was taken. It does not modify or delete your
+      existing Dropbox files.</li>
+    <li><strong>Location from your photos.</strong> The app reads GPS coordinates embedded in your
+      photos' metadata and resolves them to countries/cities <strong>on your device</strong>. The
+      app does not track your live/device location.</li>
+  </ul>
+
+  <h2>What is stored, and where</h2>
+  <ul>
+    <li><strong>On your device only:</strong> photo metadata (file name, date, GPS, derived
+      country/city, and your manual tags and trips) is stored in a private app database. Dropbox
+      access tokens are stored encrypted using the Android Keystore.</li>
+    <li><strong>Optional cloud backup (off by default):</strong> if you turn it on, the app uploads
+      a copy of that metadata database to a private folder in <em>your own</em> Dropbox. The backup
+      is <strong>encrypted on your device</strong> (AES-256-GCM with a key derived from a password
+      you set) before it is uploaded, so you will need that password to restore it — it cannot be
+      recovered for you.</li>
+    <li><strong>Crash logs:</strong> if the app crashes, a diagnostic log is saved
+      <strong>on your device</strong> so you can view it in Settings. It is never sent anywhere
+      automatically — it is only shared if you choose to share it (e.g. by email) to report a
+      problem.</li>
+  </ul>
+
+  <h2>Third parties</h2>
+  <ul>
+    <li><strong>Dropbox</strong> — used only if you connect it, to read your files and (optionally)
+      store your encrypted backup in your own account. See
+      <a href="https://www.dropbox.com/privacy">Dropbox's Privacy Policy</a>.</li>
+    <li><strong>Google AdMob (optional ads).</strong> Supporting the app by watching a rewarded ad
+      is entirely optional. If you do, Google's advertising SDK may process your device's
+      advertising identifier and similar data to serve and measure ads. In the EEA, UK and
+      Switzerland the app shows a consent prompt first, and you can change your choice any time via
+      “Manage ad privacy choices” in Settings. See
+      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+      <a href="https://support.google.com/admob/answer/6128543">how Google uses data</a>.</li>
+    <li><strong>Google Play Billing (optional donations).</strong> An optional one-time donation is
+      processed by Google Play. Google handles the payment; the app never sees your payment card or
+      billing details.</li>
+  </ul>
+
+  <h2>What the app does NOT do</h2>
+  <ul>
+    <li>It has no servers, user accounts, or analytics of its own.</li>
+    <li>Your photos and metadata are never sent to the developer or to any third party other than
+      the services above (and only as described).</li>
+    <li>We do not sell or share your personal data.</li>
+  </ul>
+
+  <h2>Your control</h2>
+  <ul>
+    <li>Disconnect Dropbox, turn off the device photo source, or delete the local database at any
+      time in Settings.</li>
+    <li>Deleting the app removes all of its on-device data.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Photo Atlas is not directed at children under 13, and does not knowingly collect data from
+  them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the “last updated” date above will change. Material changes will be
+  reflected here before they take effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:tueftlerapps@gmail.com">tueftlerapps@gmail.com</a></p>
+</body>
+</html>
