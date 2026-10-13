@@ -29,7 +29,7 @@
 </head>
 <body>
   <h1>Photo Atlas — Privacy Policy</h1>
-  <p class="updated">Last updated: 10 October 2026</p>
+  <p class="updated">Last updated: 13 October 2026</p>
 
   <p>Photo Atlas helps you see where your photos were taken on a map. It is designed to be
   <strong>local-first</strong>: your photos and the information derived from them stay on your
@@ -56,10 +56,14 @@
       country/city, and your manual tags and trips) is stored in a private app database. Dropbox
       access tokens are stored encrypted using the Android Keystore.</li>
     <li><strong>Optional cloud backup (off by default):</strong> if you turn it on, the app uploads
-      a copy of that metadata database to a private folder in <em>your own</em> Dropbox. The backup
-      is <strong>encrypted on your device</strong> (AES-256-GCM with a key derived from a password
-      you set) before it is uploaded, so you will need that password to restore it — it cannot be
-      recovered for you.</li>
+      a copy of that metadata database (and your app settings) to a private folder in
+      <em>your own</em> Dropbox, plus a small file describing it (whether it has a password, the
+      phone model, the date and the number of photos) so a new phone can offer to restore it.
+      If you set a backup password (recommended), the backup is <strong>encrypted on your
+      device</strong> (AES-256-GCM with a key derived from that password) before it is uploaded,
+      and you will need the password to restore it — it cannot be recovered for you. Without a
+      password, the backup is stored unencrypted in your Dropbox, protected only by your Dropbox
+      account.</li>
     <li><strong>Crash logs:</strong> if the app crashes, a diagnostic log is saved
       <strong>on your device</strong> so you can view it in Settings. It is never sent anywhere
       automatically — it is only shared if you choose to share it (e.g. by email) to report a
@@ -109,8 +113,8 @@
       <em>Settings → Advanced → Danger zone → Delete local database</em>.</li>
     <li><strong>Cloud backup (only if you turned it on):</strong> in your Dropbox, delete the folder
       <code>.photoatlas_backup</code> inside your Camera Uploads folder (or whichever folder you chose
-      as your main folder). It holds <code>photo_atlas.db.enc</code> and
-      <code>photo_atlas.db.prev.enc</code>.</li>
+      as your main folder). It holds <code>photo_atlas.db.enc</code>,
+      <code>photo_atlas.db.prev.enc</code> and their small <code>backup_info</code> files.</li>
     <li><strong>Dropbox access:</strong> in the app, <em>Settings → Dropbox → Disconnect</em>, or revoke
       Photo Atlas under <em>Connected apps</em> in your Dropbox account settings.</li>
     <li><strong>Advertising data (only if you watched an optional ad):</strong> reset or delete your
